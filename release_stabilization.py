@@ -23,7 +23,7 @@ class Callbacks:
         self.settings_path = os.path.join(self.working_dir, 'stabilization_settings.xml')
 
     """This is a callback to Confluent's cloud release tooling,
-    and allows us to have consistent versioning"""
+    and allows us to have consistent versioning."""
     def version_as_leaf(self):
         return self.leaf == 'cc-docker-ksql'
 
